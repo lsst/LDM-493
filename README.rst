@@ -1,7 +1,7 @@
 .. image:: https://img.shields.io/badge/ldm--493-lsst.io-brightgreen.svg
    :target: https://ldm-493.lsst.io
-.. image:: https://travis-ci.org/lsst/ldm-493.svg
-   :target: https://travis-ci.org/lsst/ldm-493
+.. image:: https://travis-ci.org/lsst/LDM-493.svg
+   :target: https://travis-ci.org/lsst/LDM-493
 ..
   Uncomment this section and modify the DOI strings to include a Zenodo DOI badge in the README
   .. image:: https://zenodo.org/badge/doi/10.5281/zenodo.#####.svg
