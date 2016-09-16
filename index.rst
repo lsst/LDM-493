@@ -118,3 +118,38 @@ LSST DocHub
 
 - DocHub provides an index and search service for all LSST documentation.
 - Documentation must use the DocHub metadata format.
+
+.. _formats:
+
+Documentation Formats and Generators
+====================================
+
+This section describes the tools that builds the static documentation sites that are published with LSST the Docs.
+
+.. _formats-sphinx:
+
+Sphinx
+------
+
+.. _formats-sphinx-documents:
+
+Sphinx for design documents
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For design documents and technotes.
+
+.. _formats-sphinx-guides:
+
+Sphinx for user guides
+^^^^^^^^^^^^^^^^^^^^^^
+
+For user guides and multi-page sites.
+
+.. _formats-alt:
+
+Landing Pages for Alternative Formats
+-------------------------------------
+
+Documentation cannot be left long-term in Confluence or Google Docs.
+These formats are acceptable for initial drafting.
+A ticket cannot be closed with a Confluence Page or Google Doc as evidence of completed documentation.
