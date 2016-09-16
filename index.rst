@@ -96,3 +96,25 @@ Finally, scientific publications are written as a holistic synthesis of the enti
 This is an *idealized* information flow. 
 Software development work will spur new Technical Notes that in turn create new designs.
 However, :numref:`fig-information-flow` shows the role of each document class in supporting the Data Management System in reporting research, documenting designs, and documenting for users.
+
+.. _publishing:
+
+Publishing Technologies
+=======================
+
+This section describes how documentation should be published.
+
+.. _publishing-ltd:
+
+LSST the Docs
+-------------
+
+- All documentation must be published as static sites through LTD.
+
+.. _publishing-dochub:
+
+LSST DocHub
+-----------
+
+- DocHub provides an index and search service for all LSST documentation.
+- Documentation must use the DocHub metadata format.
