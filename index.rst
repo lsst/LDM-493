@@ -156,8 +156,21 @@ LTD imposes a few implementation constraints on DM documentation projects:
 LSST DocHub
 -----------
 
-- DocHub provides an index and search service for all LSST documentation.
-- Documentation must use the DocHub metadata format.
+LSST DocHub is a documentation metadata database and web API that is presented to users as a web application for searching and browsing LSST documentation.
+All DM documentation must be available through DocHub.
+
+.. note::
+
+   DocHub's design will be presented in up-coming Technotes.
+
+Requirements for compatibility with DocHub
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To be listed in LSST DocHub, projects must be registered with DocHub, and have a DocHub-compatible metadata file residing in the project's Git repository.
+
+.. note::
+
+   The DocHub metadata format will be specified in an up-coming Technote.
 
 .. _formats:
 
