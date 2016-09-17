@@ -102,14 +102,54 @@ However, :numref:`fig-information-flow` shows the role of each document class in
 Publishing Technologies
 =======================
 
-This section describes how documentation should be published.
+All Data Management documentation is formally published through a system of two platforms managed by DM: LSST the Docs, and LSST DocHub.
+Publishing all documentation in this system ensures that documentation is consistent in presentation and discoverable.
+This section reviews the functionality of these platforms.
 
 .. _publishing-ltd:
 
 LSST the Docs
 -------------
 
-- All documentation must be published as static sites through LTD.
+LSST the Docs (LTD) is a platform for continuously publishing versioned documentation to the web.
+LTD is formally documented in `SQR-006`_; please see that technote for details beyond the scope of this summary.
+
+All DM documentation projects are published with LTD.
+
+.. _SQR-006: https://sqr-006.lsst.io
+
+LSST the Docs' features
+^^^^^^^^^^^^^^^^^^^^^^^
+
+The following LTD features are key to the DM documentation architecture:
+
+- LTD is a service that hosts static websites, that is, websites that do not require server-side rendering logic.
+  Supporting only static websites assures that LTD is reliable and scalable.
+  This design decision also coerces documentation into a format that can be readily archived, which is important to DM's scientific legacy.
+
+- Each documentation project hosted by LTD is published from a unique subdomain of the ``lsst.io`` domain.
+  This helps to make human-friendly URLs.
+
+- `LTD publishes multiple versions of a document <https://sqr-006.lsst.io/#versioned-documentation-urls>`_, each under a different URL path prefix.
+  This feature integrates well with DM's Git-based development workflow where new documentation can be drafted on a branch.
+  The DM team can review the rendered draft documentation without interfering with the production edition of the documentation.
+  This feature also allows multiple versions of a document to be published to users, for example, to support multiple releases of a software product.
+
+- LTD integrates well with Git repositories and continuous integration (CI) services.
+  CI allows the final documentation product to be rendered automatically by software from relatively simple markup.
+  Even scientific computation pipelines can be performed in CI that enable reproducible scientific documentation.
+
+Requirements for compatibility with LSST the Docs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+LTD imposes a few implementation constraints on DM documentation projects:
+
+- The source for the published documentation must be hosted in a version controlled repository; typically this a Git repository hosted by GitHub.
+  See :ref:`formats-alt` for the DM Documentation Architecture's approach to adapting documentation not natively to Git.
+
+- Each documentation project must be configured with a CI environment that builds and submits documentation whenever the underlying document source changes.
+  Similarly, each documentation project requires software to transform documentation source into a static website.
+  The SQuaRE team provides CI infrastructure and software to publish documentation in common source formats through LTD (see :ref:`formats`).
 
 .. _publishing-dochub:
 
