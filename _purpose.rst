@@ -1,0 +1,15 @@
+.. _purpose:
+
+Purpose and Scope
+=================
+
+The Data Management Documentation Architecture defines a system for authoring, maintaining, and publishing documentation.
+Documentation serves the Data Management System from design, to implementation, and finally to operation.
+By specifying management patterns and technologies, the goal of the Data Management Documentation Architecture is to ensure that documentation is available to the DM team and end-users when it is needed, in formats that are useful and appropriate.
+
+The Data Management Documentation Architecture covers:
+
+- A :ref:`taxonomy of documentation classes <taxonomy>` that each fulfill specific roles.
+- Platforms for publishing all DM documentation (:ref:`LSST the Docs <platforms-ltd>`), making documentation discoverable (:ref:`LSST DocHub <platforms-dochub>`), and ensuring documentation is citeable.
+- A :ref:`set of documentation formats <formats>` that maintain a consistent reading and discovery experience, while also promoting developer efficiency.
+- Policies for organizing the production and maintenance of each class of documentation.
