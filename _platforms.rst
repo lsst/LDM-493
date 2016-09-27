@@ -72,3 +72,56 @@ To be listed in LSST DocHub, projects must be registered with DocHub, and have a
 .. note::
 
    The DocHub metadata format will be specified in an upcoming Technote.
+
+.. _citeable:
+
+Citeable documentation
+----------------------
+
+LSST Data Management documentation should be considered scientific literature.
+Being close to the implementation, continuously tested, and written by the collective team, DM’s technical documentation should be the most accurate and scientifically useful references for detailed aspects of the Data Management System.
+To integrate with scientific literature, DM technical documentation must be citeable resources according to the expectations of the astronomy community and the LSST Project.
+This section describes how DM documentation is made citeable through Digital Object Identifiers, registration with the NASA Astrophysics Data System, and storage on the LSST Project DocuShare.
+
+Digital Object Identifiers
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Digital Object Identifiers (DOIs) are a standard for identifying digital artifacts.
+A DOI is a universal identifier that can be resolved into a document’s URL.
+The resolved URL can even be changed if the resources home on the web changes.
+Thus a DOI acts as a permanent link.
+In science, Datacite is a common DOI provider.
+Although LSST could become a Datacite member and provision DOIs through Datacite’s API, institutions like LSST typically cannot guarantee the data longevity that is expected for DOIs.
+Instead, science archives can permanently archive a copy of a document and provision a DOI through Datacite to that archived copy.
+Zenodo is an example of such an archive operated by CERN for the science community.
+
+As part of the continuous delivery process, DM documentation platforms automatically submit new or revised documents to a data archive and receive a DOI.
+For multi-page documentation websites, each webpage is individually archived and given a DOI to prevent ambiguity in citations.
+Published documents display this DOI as part of their citation instructions to readers.
+
+Note that DOIs provisioned this way resolve to the data archive’s landing page rather than the website published on LSST the Docs.
+While this does ensure the long term integrity of LSST documentation in scientific literature, it does compromise the present-day usability of DOI-cited LSST documents.
+To work around this, metadata published on the data archive landing page includes a pointer to the live document published on LSST the Docs.
+
+Archives, like Zenodo, provide discovery services in addition to storing resources and provisioning DOIs.
+While this is good, the DM Documentation Architecture does not rely upon the discovery tools of specific archives.
+Instead, DocHub is the fully-fledge document discovery platform for LSST DM.
+DocHub affords DM flexibility and specialization in organizing and presenting documentation, and also insulates LSST from a specific archive.
+Through DOIs, DocHub points to documents in archives, in addition to LSST the Docs.
+
+NASA/SAO Astrophysics Data System
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+ADS is how the astronomical community discovers literature.
+ADS is not a document hosting service, but rather a metadata and search service.
+ADS lists LSST technical documentation with record pages that include bibliographic information and links pointing to the published documentation on LSST the Docs.
+The DM documentation platforms automatically submit new and updated DM documentation to ADS as part of the regular continuous delivery process.
+Specifically, the documentation platforms cross-walk metadata already available through LSST DocHub into the ADS submission schema (`ADS Tagged Format`_). 
+
+LSST Project DocuShare
+^^^^^^^^^^^^^^^^^^^^^^
+
+DocuShare is the LSST Project’s official document repository (see `LPM-51: Document Management Plan`_).
+Design Documents (with LDM handles) must be deposited in DocuShare once approved by the Technical Control Team (TCT; see `LPM-19: Change Control Process`_).
+The LSST Project considers the version in DocuShare as the official version of a document.
+Such documents are also published to LSST the Docs and made available through LSST DocHub.

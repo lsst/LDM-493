@@ -15,3 +15,4 @@
 .. _`Creative Commons Zeros (CC0)`: https://creativecommons.org/choose/zero/
 .. _`Zenodo terms of use`: https://zenodo.org/terms
 .. _`Contemporary TechDocs`: http://blog.thoward37.me/articles/contemporary-techdocs/
+.. _`ADS Tagged Format`: http://adsabs.harvard.edu/abs_doc/help_pages/taggedformat.html#The_ADS_Tagged_Format
