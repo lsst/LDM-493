@@ -43,6 +43,7 @@ User Guides (DMG)
    Typically, end-users are astronomers in the scientific community.
    Some **User Guides** may instead be considered internal, such as **Operational Guides** or **Developer Guides**.
    The most important aspect of *User Guides* is that they are written intentionally for their intended audience.
+   See :ref:`guides` for details.
 
 Publications
    Publications---namely journal articles, and conference presentations and proceedings---speak directly to the science community.

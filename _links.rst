@@ -6,6 +6,8 @@
 
 .. _SQR-006: https://sqr-006.lsst.io
 .. _SQR-011: https://sqr-011.lsst.io
+.. _`DM Developer Guide`: https://developer.lsst.io
+.. _`pipelines.lsst.io`: https://pipelines.lsst.io
 
 .. _Sphinx: http://sphinx-doc.org
 .. _GitHub: https://github.com

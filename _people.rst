@@ -11,6 +11,8 @@ Managers must budget time for engineers to create documentation, not just implem
 
 .. credit: Eric Holscher
 
+.. _techdocs:
+
 The Data Management TechDocs team
 ---------------------------------
 
