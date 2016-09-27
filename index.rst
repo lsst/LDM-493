@@ -10,6 +10,8 @@
 
 .. include:: /_taxonomy.rst
 
+.. include:: /_people.rst
+
 .. include:: /_licensing.rst
 
 .. include:: /_platforms.rst

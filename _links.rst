@@ -14,3 +14,4 @@
 .. _`Creative Commons Attribution 4.0 International (CC BY 4.0)`: https://creativecommons.org/licenses/by/4.0/
 .. _`Creative Commons Zeros (CC0)`: https://creativecommons.org/choose/zero/
 .. _`Zenodo terms of use`: https://zenodo.org/terms
+.. _`Contemporary TechDocs`: http://blog.thoward37.me/articles/contemporary-techdocs/
