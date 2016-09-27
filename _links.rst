@@ -5,6 +5,7 @@
 .. _`LPM-51: Document Management Plan`: https://docushare.lsstcorp.org/docushare/dsweb/Get/LPM-51
 
 .. _SQR-006: https://sqr-006.lsst.io
+.. _SQR-011: https://sqr-011.lsst.io
 
 .. _Sphinx: http://sphinx-doc.org
 .. _GitHub: https://github.com
