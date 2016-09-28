@@ -24,6 +24,7 @@ DM design documentation (LDM)
    DM is responsible for updating design documentation whenever necessitated by revised project requirements, or by changing implementation realities.
    Design documents must be approved by the Change Control Board (`LPM-19: Change Control Process`_) before being considered actionable.
    These documents are also subject to `LPM-51: Document Management Plan`_.
+   See :ref:`ldm` for how change-controlled documents are handled by the Data Management Documentation Architecture.
 
 Technical notes (DMTN, SQR)
    Technical notes are standardized, durable, documents that can be published on demand by Data Management team members to capture and share knowledge.
@@ -67,12 +68,12 @@ DM's documentation taxonomy facilitates a flow of information from research and 
 
 As :numref:`fig-information-flow` illustrates, the scope and functionality of the Data Management System is specified by Requirements Documents.
 Design documents translate requirements into actionable designs and documentation of system implementations.
-Designs originate in change controlled Design Documents (LDM), though details can be deferred to Implementation Technical Notes (DMTN).
-In addition to requirements documents, Technical Notes inform design documentation.
-User Guides are written for end users using a combination of information from the design documentation and the implemented software itself.
+Designs originate in :ref:`change controlled design documents (LDM) <ldm>`, though details can be deferred to :ref:`implementation technical notes (DMTN, SQR) <implementation-technotes>`.
+In addition to requirements documents, :ref:`technical notes <technotes>` inform design decisions.
+:ref:`User guides <guides>` are written for end users using a combination of information from the design documentation and the implemented software itself.
 Verification documentation is written as a consequence of testing activities.
 Finally, scientific publications are written as a holistic synthesis of the entire Data Management System for the community.
 
 Note that this is an *idealized* linear information flow. 
-Software development work will spur new Technical Notes that in turn create revise design documentation.
+Software development work will spur new :ref:`technical notes <technotes>` that in turn create revise design documentation.
 However, :numref:`fig-information-flow` shows the role of each document class in supporting the Data Management System in reporting research, documenting designs, and documenting for users.

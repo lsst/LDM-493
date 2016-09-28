@@ -83,6 +83,8 @@ Being close to the implementation, continuously tested, and written by the colle
 To integrate with scientific literature, DM technical documentation must be citeable resources according to the expectations of the astronomy community and the LSST Project.
 This section describes how DM documentation is made citeable through Digital Object Identifiers, registration with the NASA Astrophysics Data System, and storage on the LSST Project DocuShare.
 
+.. _doi:
+
 Digital Object Identifiers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -118,10 +120,12 @@ ADS lists LSST technical documentation with record pages that include bibliograp
 The DM documentation platforms automatically submit new and updated DM documentation to ADS as part of the regular continuous delivery process.
 Specifically, the documentation platforms cross-walk metadata already available through LSST DocHub into the ADS submission schema (`ADS Tagged Format`_). 
 
+.. _docushare:
+
 LSST Project DocuShare
 ^^^^^^^^^^^^^^^^^^^^^^
 
 DocuShare is the LSST Project’s official document repository (see `LPM-51: Document Management Plan`_).
-Design Documents (with LDM handles) must be deposited in DocuShare once approved by the Technical Control Team (TCT; see `LPM-19: Change Control Process`_).
+:ref:`Change controlled design documents <ldm>` (with LDM handles) must be deposited in DocuShare once approved by the Change Control Board (CCB; see `LPM-19: Change Control Process`_).
 The LSST Project considers the version in DocuShare as the official version of a document.
 Such documents are also published to LSST the Docs and made available through LSST DocHub.

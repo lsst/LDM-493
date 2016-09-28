@@ -10,7 +10,7 @@ The close relationship between an implementation technote and the resulting code
 Role
 ----
 
-Change-controlled design documents often only specify broad functionality and baseline requirements.
+:ref:`Change-controlled design documents <ldm>` often only specify broad functionality and baseline requirements.
 Many design decisions are required to translate a baseline design into an implementation.
 Implementation technotes are a low-overhead means of creating and sharing design information.  
 

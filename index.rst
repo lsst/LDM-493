@@ -18,6 +18,8 @@
 
 .. include:: /_formats.rst
 
+.. include:: /_ldm.rst
+
 .. include:: /_technotes.rst
 
 .. include:: /_implementation_technotes.rst

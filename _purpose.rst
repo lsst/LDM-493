@@ -10,13 +10,13 @@ By specifying management patterns and technologies, the goal of the Data Managem
 The Data Management Documentation Architecture covers:
 
 - A :ref:`taxonomy of documentation classes <taxonomy>` that each fulfill specific roles.
-- Platforms for publishing all DM documentation (:ref:`LSST the Docs <platforms-ltd>`), making documentation discoverable (:ref:`LSST DocHub <platforms-dochub>`), and ensuring documentation is citeable.
+- Platforms for publishing all DM documentation (:ref:`LSST the Docs <platforms-ltd>`), making documentation discoverable (:ref:`LSST DocHub <platforms-dochub>`), and ensuring documentation is :ref:`citeable <citeable>`.
 - A :ref:`set of documentation formats <formats>` that maintain a consistent reading and discovery experience, while also promoting developer efficiency.
 - Policies for organizing the production and maintenance of each class of documentation.
 
 The following are examples of subjects beyond the scope of this document:
 
-- Communications platforms (e.g., the LSST Community forum, Slack, meetings).
+- Communications platforms (e.g., the `LSST Community forum`, Slack, meetings).
   See `SQR-011`_.
 - Meeting notes on Confluence.
   See `SQR-011`_.
@@ -26,4 +26,4 @@ The following are examples of subjects beyond the scope of this document:
   See the `DM Developer Guide <https://developer.lsst.io/processes/decision_process.html>`__.
 - Presentations.
 - Scientific publications.
-  See `LPM-162: Project Publication Policy`.
+  See `LPM-162: Project Publication Policy`_.
