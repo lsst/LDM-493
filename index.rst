@@ -20,6 +20,8 @@
 
 .. include:: /_technotes.rst
 
+.. include:: /_implementation_technotes.rst
+
 .. include:: /_guides.rst
 
 .. include:: /_links.rst
