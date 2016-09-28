@@ -26,4 +26,4 @@ The following are examples of subjects beyond the scope of this document:
   See the `DM Developer Guide <https://developer.lsst.io/processes/decision_process.html>`__.
 - Presentations.
 - Scientific publications.
-  See :lpm:`162`.
+  See `LPM-162: Project Publication Policy`.
