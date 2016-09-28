@@ -18,6 +18,8 @@
 
 .. include:: /_formats.rst
 
+.. include:: /_technotes.rst
+
 .. include:: /_guides.rst
 
 .. include:: /_links.rst

@@ -32,11 +32,12 @@ Implementation Technical Notes (DMTN, SQR)
    These documents are expected to be continuously updated (or deprecated) to reflect the state of a system.
    The primary audience of **Implementation Technical Notes** is DM team members who build, maintain, or interface with a system.
 
-Technical Notes (DMTN, SQR)
-   Technical Notes are standardized, durable, documents that can be published on demand by Data Management team members to capture and share knowledge.
-   Common uses of **Technical Notes** are descriptions of experiments with code or data, or reviews of literature or technologies.
-   Technical Notes may propose designs and such documents will naturally become **Implementation Technical Notes** once they formally describe the design of a Data Management System.
-   The primary audiences of **Technical Notes** are DM team members and the science community.
+Technical notes (DMTN, SQR)
+   Technical notes are standardized, durable, documents that can be published on demand by Data Management team members to capture and share knowledge.
+   Common uses of **technical notes** are descriptions of experiments with code or data, or reviews of literature or technologies.
+   Technical notes may propose designs and such documents will naturally become **implementation technical notes** once they formally describe the design of a Data Management System.
+   The primary audiences of **technical notes** are DM team members and the science community.
+   See :ref:`technotes` for details.
 
 User Guides (DMG)
    These documentation products describe usage of DM software, platforms, and data products to end-users.
