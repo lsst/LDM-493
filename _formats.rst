@@ -3,7 +3,7 @@
 Documentation Formats and Generators
 ====================================
 
-This section describes the tools that builds the static documentation sites that are published with LSST the Docs.
+This section describes the tools that builds the static documentation sites that are published with :ref:`LSST the Docs <platforms-ltd>`.
 
 .. _formats-sphinx:
 
@@ -12,10 +12,37 @@ Sphinx
 
 .. _formats-sphinx-documents:
 
-Sphinx for design documents
+Single-page Sphinx projects
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For design documents and technotes.
+Narrative-based information architecture
+""""""""""""""""""""""""""""""""""""""""
+
+The single-page website is an excellent format for narratives that coherently explore a single topic or idea.
+By adopting the form of an academic article organized linearly by section headers, a single-page website is readily :ref:`citeable <citeable>` (a single URL, and thus a single :ref:`DOI <doi>`) and :ref:`archivable <docushare>` (a page can be transformed into a self-contained artifact like a PDF).
+At the same time, a single page website *is a website* and benefits from native hyperlinks, exposure to search engines, and a visual presentation that adapts to the reader’s context (responsive design).
+
+Implementation
+""""""""""""""
+
+Single-page Sphinx projects implement the idea of a single page website.
+Authors create new single page projects from a configurable template.
+Each single-page Sphinx project is maintained in individual Git repositories and configured to publish automatically to :ref:`LSST the Docs <platforms-ltd>`.
+
+Much of the design and logic for the format is centrally managed by the TechDocs team in separate Git repositories.
+This makes single-page Sphinx projects manageable and consistent in form and function.
+This technology stack is also shared with :ref:`multi-page Sphinx projects <formats-sphinx-guides>`, which are employed by :ref:`user guide <guides>` projects.
+
+The single-page Sphinx format is recommended for technotes, implementation technotes, and change-controlled design documentation. As an alternative, these formats can be published through the landing page framework. Authoring and publishing through the single-page Sphinx format, however, creates a better reading experience due to features like deep hyperlinking to individual content objects and responsive design.
+
+Archival and citation workflow
+""""""""""""""""""""""""""""""
+
+In relation to the `LSST Document Management Plan <LPM-51: Document Management Plan>`_, single-page Sphinx projects are DM's equivalent to the Project's `Document-9224`_ document template.
+:ref:`LSST the Docs <platforms-ltd>` continuously publishes DM single-page Sphinx projects as websites.
+When a single-page Sphinx project is delivered (by merging to the ``master`` Git branch), the documentation infrastructure creates a PDF version of the document that matches the form of `Document-9224`_ as much as is feasible.
+This PDF is deposited in `DocuShare per `LPM-51 <LPM-51: Document Management Plan>`_.
+Simultaneously, the PDF is also delivered to a science data archive to obtain a citeable :ref:`DOI <doi>`.
 
 .. _formats-sphinx-guides:
 
@@ -29,7 +56,7 @@ For user guides and multi-page sites.
 Landing Pages for Alternative Formats
 -------------------------------------
 
-Not all documentation is produced as a Sphinx_ project.
+Not all documentation is produced as a :ref:`Sphinx project <formats-sphinx>`.
 DM team members have shown a preference for alternative formats that have unique qualities like: built-in collaboration facilities, a heritage in scientific publication, or integration with software and data.
 Developer efficiency is paramount, and the DM Documentation Architecture must not impede developers from using the best tools at hand.
 
