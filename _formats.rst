@@ -3,12 +3,25 @@
 Documentation Formats and Generators
 ====================================
 
-This section describes the tools that builds the static documentation sites that are published with :ref:`LSST the Docs <platforms-ltd>`.
+This section describes the tools used to build static documentation sites that are published with :ref:`LSST the Docs <platforms-ltd>`.
 
 .. _formats-sphinx:
 
 Sphinx
 ------
+
+Sphinx_ is the first-class documentation generator for LSST Data Management.
+All :ref:`user guides <guides>` are produced with Sphinx.
+Although not required, other documentation classes should be preferably produced with Sphinx as well.
+
+Sphinx is an ideal documentation generator for Data Management.
+Sphinx and reStructuredText are implemented in Python, which again matches the DM technology stack.
+Since reStructuredText is plain text, Sphinx projects integrate well with Data Management's Git-based development workflow.
+Through Python APIs, both Sphinx and the reStructuredText markup language are thoroughly extensible, giving the :ref:`TechDocs team <techdocs>` opportunity to engineer solutions that both improve developer efficiency, and improve the quality of documentation.
+For example, Sphinx is able to introspect Python code to build API reference documentation.
+
+The DM Documentation Architecture uses two types of Sphinx projects, depending on the document class.
+These are :ref:`single-page projects <formats-sphinx-documents>` for narrative documents, and :ref:`multi-page projects <formats-sphinx-guides>` for user guides.
 
 .. _formats-sphinx-documents:
 
