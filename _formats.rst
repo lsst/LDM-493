@@ -35,6 +35,8 @@ This technology stack is also shared with :ref:`multi-page Sphinx projects <form
 
 The single-page Sphinx format is recommended for technotes, implementation technotes, and change-controlled design documentation. As an alternative, these formats can be published through the landing page framework. Authoring and publishing through the single-page Sphinx format, however, creates a better reading experience due to features like deep hyperlinking to individual content objects and responsive design.
 
+.. _formats-sphinx-document-archival:
+
 Archival and citation workflow
 """"""""""""""""""""""""""""""
 
@@ -49,7 +51,60 @@ Simultaneously, the PDF is also delivered to a science data archive to obtain a 
 Sphinx for user guides
 ^^^^^^^^^^^^^^^^^^^^^^
 
-For user guides and multi-page sites.
+Topic-based information architecture
+""""""""""""""""""""""""""""""""""""
+
+The purpose of a :ref:`user guide <guides>` is to introduce users to a product, teach users how to use a product, and be a reliable reference for every relevant feature and behavior in a product.
+As such, :ref:`user guides <guides>` are a constellation of marketing material, tutorials, conceptual guides, and references, as appropriate.
+This type of documentation is markedly different from the narrative documentation that is supported by the :ref:`single-page Sphinx format <formats-sphinx-documents>` (and the :ref:`landing page framework <formats-alt>`).
+:ref:`User guides <guides>` must be implemented as multi-page websites, where each page covers a different topic type. 
+
+*Every Page is Page One* [#fn-eppo]_ is a compelling information architecture for documentation projects that DM implements in our user documentation.
+In an Every Page is Page One (EPPO) architecture, every page of documentation is a self-contained topic.
+Topics link to each other based on subject affinities to form a bottom-up information architecture (as opposed to a strictly top-down hierarchy that is established by narratives like :ref:`single-page Sphinx projects <formats-sphinx-documents>` and other report-like documents).
+The EPPO architecture acknowledges that users will create their own curriculum for learning a product, and that a linear hierarchy is not well-suited for this.
+
+EPPO also benefits DM.
+Each documentation page is self-contained, making documentation work easier to plan and schedule.
+Interlinked, self-contained pages also naturally reduce content duplication and ease maintenance.
+
+.. [#fn-eppo] Baker, Mark (2013). *Every Page is Page One: Topic-Based Writing for Technical Communication and the Web*. Laguna Hills: XML Press.
+
+Implementation
+""""""""""""""
+
+Documentation in the EPPO-type information architecture must exist natively on the web.
+The multi-page Sphinx format is how DM implements all user documentation, without exception.
+Each :ref:`user guide <guides>` project is embedded in the code repository of the product it documents.
+In conjunction with :ref:`LSST the Docs <platforms-ltd>` continuous versioned documentation delivery, this arrangement ensures that documentation is always versioned in step with the product.
+Indeed, API reference documentation is typically extracted from the code itself.
+Keeping documentation close to the code also improves the workflow of engineers who contribute documentation.
+
+All multi-page Sphinx projects share common infrastructure to maintain consistency in form and function.
+This infrastructure is also shared with single-page Sphinx projects.
+
+Runnable content
+""""""""""""""""
+
+Examples and tutorials in user guides are engineered to be tested as part of the product’s continuous integration.
+This ensures that documentation and implementation are kept in sync.
+Tutorials are integrated in a way that allows the user to easily run and remix example code.
+This may be done with technologies like Jupyter_ notebooks and the LSST science user interface itself.
+
+Citeable content
+""""""""""""""""
+
+Since user documentation is the most detailed documentation of implemented DM products (thanks to its proximity to the code), user documentation should be an ideal scientific reference.
+As described above, user guides are implemented as assemblies of self-contained topics.
+The individual topic (a page at a single URL) is therefore the most precise citeable entity.
+Citations to a user guide, in general, do not help a reader find the relevant information.
+
+To facilitate topic-level citation, individual pages of multi-page Sphinx sites are archived independently.
+Each page is rendered into a self-contained PDF (:ref:`single-page Sphinx sites <formats-sphinx-document-archival>`) and deposited in a science data archive to be granted a :ref:`DOI <doi>`.
+Each page, as published on :ref:`LSST the Docs <platforms-ltd>`, displays its DOI with citation instructions for researchers.
+
+DM documentation infrastructure automates the workflow described above.
+Since it is an expensive workflow, a multi-page Sphinx site is only archived as part of a merge to the documentation’s `master` branch (and designated maintenance branches for releases).
 
 .. _formats-alt:
 
