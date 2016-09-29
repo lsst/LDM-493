@@ -11,6 +11,7 @@
 .. _`DM Developer Guide`: https://developer.lsst.io
 .. _`pipelines.lsst.io`: https://pipelines.lsst.io
 .. _`LSST Community forum`: https://community.lsst.org
+.. _`Community.lsst.org`: https://community.lsst.org
 
 .. _Sphinx: http://sphinx-doc.org
 .. _GitHub: https://github.com

@@ -104,6 +104,8 @@ This ensures that documentation and implementation are kept in sync.
 Tutorials are integrated in a way that allows the user to easily run and remix example code.
 This may be done with technologies like Jupyter_ notebooks and the LSST science user interface itself.
 
+.. _user-guide-citation:
+
 Citeable content
 """"""""""""""""
 
@@ -117,7 +119,7 @@ Each page is rendered into a self-contained PDF (:ref:`single-page Sphinx sites 
 Each page, as published on :ref:`LSST the Docs <platforms-ltd>`, displays its DOI with citation instructions for researchers.
 
 DM documentation infrastructure automates the workflow described above.
-Since it is an expensive workflow, a multi-page Sphinx site is only archived as part of a merge to the documentation’s `master` branch (and designated maintenance branches for releases).
+Since it is an expensive workflow, a multi-page Sphinx site is only archived as part of a merge to the documentation’s ``master`` branch (and designated maintenance branches for releases).
 
 .. _formats-alt:
 

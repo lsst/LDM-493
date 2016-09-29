@@ -41,6 +41,8 @@ Authorship
 Like :ref:`general technotes <technotes>`, implementation technical notes are intellectual contributions by individual DM team members.
 Pull requests by non-authors should always be reviewed by the original authors since, in most cases, the original authors are responsible for the described system's implementation.
 
+.. _implementation-technotes-maintenance:
+
 Maintenance
 -----------
 

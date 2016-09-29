@@ -22,9 +22,7 @@ Unlike design documentation, user guides are tightly integrated with a DM produc
 Consequently, user guides are the most definitive references for what DM products are and how they work.
 Their content will be used by scientists to create science.
 These aspects make DM guides ideal primary references for scientific literature.
-We enable this usage by making individual pages of guides :ref:`citeable <citeable>` entities (see Format).
-
-.. todo:: Link to citeability of multi-page sphinx projects in :ref:`formats` section.
+We enable this usage by making individual pages of guides :ref:`citeable <citeable>` entities (see :ref:`user-guide-citation`).
 
 Technical Implementation
 ------------------------
@@ -59,9 +57,7 @@ Design documentation and user guides both refer to the same thing: a DM product.
 Depending on the user guide's intended audience, design documentation may flow and be transformed into user guide content.
 For example, the Science Pipelines user guide is an open source software project where users are also developers.
 Successfully using and extending the LSST Science Pipelines may require documentation of implementation details originally described in design documentation.
-Rather than maintain a parallel set of overlapping design and user documentation, in this case the design documents should be deprecated in favor of the user guide. (see Implementation Technote maintenance section).
-
-.. todo:: Link to Implementation technote maintenance section.
+Rather than maintain a parallel set of overlapping design and user documentation, in this case the design documents should be deprecated in favor of the user guide. (see :ref:`implementation-technotes-maintenance`).
 
 User Guide Working Groups
 -------------------------
@@ -98,15 +94,24 @@ Maintenance
 
 User guides are continuously delivered in step with product development.
 
-As APIs change or are added, software developers must update the corresponding reference documentation. This process is convenient for developers since reference documentation is typically extracted from source code itself. Reference documentation writing is expected to be part of all software development tickets.
+As APIs change or are added, software developers must update the corresponding reference documentation.
+This process is convenient for developers since reference documentation is typically extracted from source code itself.
+Reference documentation writing is expected to be part of all software development tickets.
 
-Tutorial and conceptual documentation is more expensive to produce than reference documentation, and is typically written in tickets separate from software development. API changes may break conceptual or tutorial documentation. Where possible, the software development ticket’s scope should including fixing incompatibilities in the documentation. Where the changes are too numerous, the outdated documentation should still be identified and excluded from documentation builds, and a follow-up documentation ticket should created and scheduled.
+Tutorial and conceptual documentation is more expensive to produce than reference documentation, and is typically written in tickets separate from software development.
+API changes may break conceptual or tutorial documentation.
+Where possible, the software development ticket’s scope should including fixing incompatibilities in the documentation.
+Where the changes are too numerous, the outdated documentation should still be identified and excluded from documentation builds, and a follow-up documentation ticket should created and scheduled.
 
 User Guides and Community.lsst.org
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Community.lsst.org is DM’s primary long-form communication venue, both internally and with end-users. Through conversation, original knowledge is naturally published on Community.lsst.org. Thanks to its open nature and search capabilities, Community.lsst.org can serve as an emergent knowledge base for LSST.
+`Community.lsst.org`_ is DM’s primary long-form communication venue, both internally and with end-users.
+Through conversation, original knowledge is naturally published on `Community.lsst.org`_.
+Thanks to its open nature and search capabilities, `Community.lsst.org`_ can serve as an emergent knowledge base for LSST.
 
-However, Community.lsst.org should not surpass any user guide as a primary source of information. User guide working groups should monitor Community forum conversations. When a question on the Community forum cannot be answered by the user guide, the working group should seek to distill the conversation’s information into the user guide.
+However, `Community.lsst.org`_ should not surpass any user guide as a primary source of information.
+User guide working groups should monitor Community forum conversations.
+When a question on the Community forum cannot be answered by the user guide, the working group should seek to distill the conversation’s information into the user guide.
 Once the new user guide is updated, the working group should post a reply to the Community topic that links to the new content in the user guide.
 This helps future readers find user guide content through the Community forum.
