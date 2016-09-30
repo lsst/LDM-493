@@ -26,7 +26,7 @@ The following LTD features are key to the DM documentation architecture:
   Supporting only static websites assures that LTD is reliable and scalable.
   This design decision also coerces documentation into a format that can be readily archived, which is important to DM's scientific legacy.
 
-- **Each documentation project hosted by LTD is published from a unique subdomain of the ``lsst.io`` domain.**
+- **Each documentation project hosted by LTD is published from a unique subdomain of the lsst.io domain.**
   This helps to make human-friendly URLs.
   Audiences should see the ``lsst.io`` domain as a brand synonymous with LSST documentation.
 

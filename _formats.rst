@@ -56,7 +56,7 @@ Archival and citation workflow
 In relation to the `LSST Document Management Plan <LPM-51: Document Management Plan>`_, single-page Sphinx projects are DM's equivalent to the Project's `Document-9224`_ document template.
 :ref:`LSST the Docs <platforms-ltd>` continuously publishes DM single-page Sphinx projects as websites.
 When a single-page Sphinx project is delivered (by merging to the ``master`` Git branch), the documentation infrastructure creates a PDF version of the document that matches the form of `Document-9224`_ as much as is feasible.
-This PDF is deposited in `DocuShare per `LPM-51 <LPM-51: Document Management Plan>`_.
+This PDF is deposited in `DocuShare per LPM-51 <LPM-51: Document Management Plan>`_.
 Simultaneously, the PDF is also delivered to a science data archive to obtain a citeable :ref:`DOI <doi>`.
 
 .. _formats-sphinx-guides:
