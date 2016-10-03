@@ -3,9 +3,9 @@
 Publishing Platforms
 =====================
 
-All Data Management documentation is formally published through a system of two platforms managed by DM: LSST the Docs, and LSST DocHub.
+Two platforms facilitate publication and discovery of all DM documentation: LSST the Docs, and LSST DocHub.
 Publishing all documentation in this system ensures that documentation is consistent in presentation and discoverable.
-This section reviews the functionality of these platforms.
+This section summarizes the functionality of these platforms.
 
 .. _platforms-ltd:
 
@@ -13,12 +13,12 @@ LSST the Docs
 -------------
 
 LSST the Docs (LTD) is a platform for continuously publishing versioned documentation to the web.
-LTD is formally described in `SQR-006`_; please see that technote for details beyond the scope of this summary.
+LTD is more fully described in `SQR-006`_; please see that technote for details beyond the scope of this summary.
 
 All DM documentation projects are published with LTD.
 
-LSST the Docs's features
-^^^^^^^^^^^^^^^^^^^^^^^^
+LSST the Docs's key features
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The following LTD features are key to the DM documentation architecture:
 
@@ -37,7 +37,7 @@ The following LTD features are key to the DM documentation architecture:
 
 - **LTD integrates well with Git repositories and continuous integration (CI) services.**
   CI allows the final documentation product to be rendered automatically by software from relatively simple markup.
-  Even scientific computation pipelines can be performed in CI that enable reproducible scientific documentation.
+  Even scientific computation pipelines can be performed in CI that enable reproducible scientific documentation. [<--- I have no idea what this means - expand/rephrase?]
 
 Requirements for compatibility with LSST the Docs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -62,7 +62,7 @@ All DM documentation must be available through DocHub.
 
 .. note::
 
-   DocHub's design will be presented in upcoming Technotes.
+   DocHub's design in ongoing and will be presented in upcoming Technotes.
 
 Requirements for compatibility with DocHub
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -78,9 +78,9 @@ To be listed in LSST DocHub, projects must be registered with DocHub, and have a
 Citeable documentation
 ----------------------
 
-LSST Data Management documentation should be considered scientific literature.
-Being close to the implementation, continuously tested, and written by the collective team, DM’s technical documentation should be the most accurate and scientifically useful references for detailed aspects of the Data Management System.
-To integrate with scientific literature, DM technical documentation must be citeable resources according to the expectations of the astronomy community and the LSST Project.
+LSST Data Management documentation is considered on par with scientific literature.
+Being close to the implementation, continuously tested, and written by the collective team, DM’s technical documentation is the most accurate and scientifically useful reference for detailed aspects of the Data Management System.
+To integrate with scientific literature, DM technical documentation is citeable according to the expectations of the astronomy community and the LSST Project.
 This section describes how DM documentation is made citeable through Digital Object Identifiers, registration with the NASA Astrophysics Data System, and storage on the LSST Project DocuShare.
 
 .. _doi:
@@ -91,7 +91,7 @@ Digital Object Identifiers
 Digital Object Identifiers (DOIs) are a standard for identifying digital artifacts.
 A DOI is a universal identifier that can be resolved into a document’s URL.
 The resolved URL can even be changed if the resources home on the web changes.
-Thus a DOI acts as a permanent link.
+Thus a DOI acts as a permanent link to the artifact (in this case, a document).
 In science, Datacite is a common DOI provider.
 Although LSST could become a Datacite member and provision DOIs through Datacite’s API, institutions like LSST typically cannot guarantee the data longevity that is expected for DOIs.
 Instead, science archives can permanently archive a copy of a document and provision a DOI through Datacite to that archived copy.
@@ -106,8 +106,8 @@ While this does ensure the long term integrity of LSST documentation in scientif
 To work around this, metadata published on the data archive landing page includes a pointer to the live document published on LSST the Docs.
 
 Archives, like Zenodo, provide discovery services in addition to storing resources and provisioning DOIs.
-While this is good, the DM Documentation Architecture does not rely upon the discovery tools of specific archives.
-Instead, DocHub is the fully-fledge document discovery platform for LSST DM.
+While this is a nice feature, the DM Documentation Architecture does **not** rely upon the discovery tools of specific archives.
+Instead, DocHub is our in-house fully-fledge document discovery platform for LSST DM.
 DocHub affords DM flexibility and specialization in organizing and presenting documentation, and also insulates LSST from a specific archive.
 Through DOIs, DocHub points to documents in archives, in addition to LSST the Docs.
 
@@ -126,6 +126,6 @@ LSST Project DocuShare
 ^^^^^^^^^^^^^^^^^^^^^^
 
 DocuShare is the LSST Project’s official document repository (see `LPM-51: Document Management Plan`_).
-:ref:`Change controlled design documents <ldm>` (with LDM handles) must be deposited in DocuShare once approved by the Change Control Board (CCB; see `LPM-19: Change Control Process`_).
-The LSST Project considers the version in DocuShare as the official version of a document.
-Such documents are also published to LSST the Docs and made available through LSST DocHub.
+:ref:`Change controlled design documents <ldm>` (with LDM handles) are deposited in DocuShare once approved by the Change Control Board (CCB; see `LPM-19: Change Control Process`_).
+The LSST Project considers the version in DocuShare as the official version of a document that reflects a technical, schedule and budget baseline.
+Such documents are also published to LSST the Docs and made available through LSST DocHub to minimise the number of platforms developers and users have to interact with.
