@@ -14,11 +14,12 @@ Sphinx_ is the first-class documentation generator for LSST Data Management.
 All :ref:`user guides <guides>` are produced with Sphinx.
 Although not required, other documentation classes should be preferably produced with Sphinx as well.
 
-Sphinx is an ideal documentation generator for Data Management.
-Sphinx and reStructuredText are implemented in Python, which again matches the DM technology stack.
-Since reStructuredText is plain text, Sphinx projects integrate well with Data Management's Git-based development workflow.
-Through Python APIs, both Sphinx and the reStructuredText markup language are thoroughly extensible, giving the :ref:`TechDocs team <techdocs>` opportunity to engineer solutions that both improve developer efficiency, and improve the quality of documentation.
-For example, Sphinx is able to introspect Python code to build API reference documentation.
+Some of the reasons Sphinx was chosen as DM's documentation generator include:
+
+- Sphinx and reStructuredText are implemented in Python, which matches the DM technology stack.
+- Since reStructuredText is plain text, Sphinx projects integrate well with Data Management's Git-based development workflow.
+- Through Python APIs, both Sphinx and the reStructuredText markup language are thoroughly extensible, giving the :ref:`TechDocs team <techdocs>` opportunity to engineer solutions that both improve developer efficiency, and improve the quality of documentation.
+  For example, Sphinx is able to introspect Python code to build API reference documentation.
 
 The DM Documentation Architecture uses two types of Sphinx projects, depending on the document class.
 These are :ref:`single-page projects <formats-sphinx-documents>` for narrative documents, and :ref:`multi-page projects <formats-sphinx-guides>` for user guides.
@@ -72,12 +73,12 @@ As such, :ref:`user guides <guides>` are a constellation of marketing material, 
 This type of documentation is markedly different from the narrative documentation that is supported by the :ref:`single-page Sphinx format <formats-sphinx-documents>` (and the :ref:`landing page framework <formats-alt>`).
 :ref:`User guides <guides>` must be implemented as multi-page websites, where each page covers a different topic type. 
 
-*Every Page is Page One* [#fn-eppo]_ is a compelling information architecture for documentation projects that DM implements in our user documentation.
+*Every Page is Page One* [#fn-eppo]_ is our guiding information architecture for documentation projects that DM implements in our user documentation.
 In an Every Page is Page One (EPPO) architecture, every page of documentation is a self-contained topic.
 Topics link to each other based on subject affinities to form a bottom-up information architecture (as opposed to a strictly top-down hierarchy that is established by narratives like :ref:`single-page Sphinx projects <formats-sphinx-documents>` and other report-like documents).
 The EPPO architecture acknowledges that users will create their own curriculum for learning a product, and that a linear hierarchy is not well-suited for this.
 
-EPPO also benefits DM.
+EPPO also benefits DM documentation development and maintainance.
 Each documentation page is self-contained, making documentation work easier to plan and schedule.
 Interlinked, self-contained pages also naturally reduce content duplication and ease maintenance.
 
@@ -86,7 +87,7 @@ Interlinked, self-contained pages also naturally reduce content duplication and 
 Implementation
 """"""""""""""
 
-Documentation in the EPPO-type information architecture must exist natively on the web.
+Documentation in the EPPO-type information architecture exists natively on the web.
 The multi-page Sphinx format is how DM implements all user documentation, without exception.
 Each :ref:`user guide <guides>` project is embedded in the code repository of the product it documents.
 In conjunction with :ref:`LSST the Docs <platforms-ltd>` continuous versioned documentation delivery, this arrangement ensures that documentation is always versioned in step with the product.
@@ -109,7 +110,7 @@ This may be done with technologies like Jupyter_ notebooks and the LSST science 
 Citeable content
 """"""""""""""""
 
-Since user documentation is the most detailed documentation of implemented DM products (thanks to its proximity to the code), user documentation should be an ideal scientific reference.
+Since user documentation is the most detailed documentation of implemented DM products (thanks to its proximity to the code), user documentation is likely the most useful scientific reference.
 As described above, user guides are implemented as assemblies of self-contained topics.
 The individual topic (a page at a single URL) is therefore the most precise citeable entity.
 Citations to a user guide, in general, do not help a reader find the relevant information.
@@ -131,7 +132,7 @@ DM team members have shown a preference for alternative formats that have unique
 Developer efficiency is paramount, and the DM Documentation Architecture must not impede developers from using the best tools at hand.
 
 But a heterogeneous mixture of authoring formats does not imply a heterogeneous delivery system.
-All DM documentation, even those produced by alternative formats, must be delivered and published through the system discussed in :ref:`platforms`.
+All DM documentation, even those produced by alternative formats, is delivered and published through the system discussed in :ref:`platforms`.
 To achieve this, documents authored in alternative formats are shimmed and published through a *landing page* framework.
 
 The Landing Page framework
@@ -165,40 +166,51 @@ This section describes workflows for publishing common document formats through 
 LaTeX documents
 """""""""""""""
 
-LaTeX documents, being plain text, should be hosted and authored entirely on GitHub_.
+LaTeX documents, being plain text, are hosted and authored entirely on GitHub_.
 This GitHub_ repository is named after the document's handle, and also hosts DocHub metadata and continuous integration configuration.
 
 The continuous integration service renders the LaTeX source into a PDF that is displayed on the landing page.
 
-Google documents
-""""""""""""""""
+Active collaboration documents
+""""""""""""""""""""""""""""""
 
-Once a Google Doc is delivered, such as by closing a ticket, it must be exported into a GitHub_ repository.
+Active collaboration documents refer to services such as Google Docs, iWork In The Cloud and Dropbox Paper that support rapid development of documents when muliple writers are simultaneously editing and commenting on the text.
+Below we use Google Doc as an example of this type of document.
+
+Google Docs are often created rapidly in an ad-hoc fashion with the understanding that in most cases, if the content has any value, the authors will produce a document in a first-party format such as a Technote.
+However in the case where this is not possible (for example because the document in question is a live spreadsheet), they can be captured in a format that integrates with the Documentation Architecture.
+
+Once a Google Doc is delivered, such as by closing a ticket, it is exported into a GitHub_ repository.
 This GitHub_ repository is named after the document's handle, and also hosts DocHub metadata and continuous integration configuration.
 
-The Google Doc should be exported as HTML (specifically, a zipped file that includes images), which will be displayed on the landing page.
+The Google Doc can be exported as HTML (specifically, a zipped file that includes images), which are then displayed on the landing page.
 PDF and EPUB versions can also be exported for offline reading; these files will be linked from the landing page.
 
-Subsequent revisions to the document should be made on Google Docs and re-exported to the GitHub_ repository in a new Git commit.
+Subsequent revisions to the document are made on Google Docs and re-exported to the GitHub_ repository in a new Git commit.
+In general though, authors are strongly encouraged to transition to a first-party format whenever possible. 
 
 Confluence pages
 """"""""""""""""
 
-Once a Confluence page is delivered, such as by closing a ticket, it must be exported to a GitHub_ repository.
+Confluence, or other Wiki pages, are a form of active collaborative document like Google Docs above.
+The same caveats apply: authors that have non-ephemeral content that started off as a wiki page are strongly ecouraged to transition to a first-party format whenever possible.
+
+In the event where this is not possible, once a Confluence page is delivered, such as by closing a ticket, it must be exported to a GitHub_ repository.
 This GitHub_ repository is named after the document's handle, and also hosts DocHub metadata and continuous integration configuration.
 
 The page should be exported as a PDF document using Confluence's native PDF export function.
 This PDF will be displayed on the landing page.
 
 Subsequent revisions to the Confluence page should be re-exported to the GitHub_ repository in a new Git commit.
+In general though, authors are strongly encouraged to transition to a first-party format whenever possible. 
 
 Jupyter notebooks
 """""""""""""""""
 
-Being JSON-based, Jupyter_ notebooks should be natively hosted in a GitHub_ repository.
+Being JSON-based, Jupyter_ notebooks are natively hosted in a GitHub_ repository.
 This repository is named after the document's handle, and also hosts DocHub metadata and continuous integration configuration.
 
-The continuous integration service should, ideally, run the notebooks themselves.
+The continuous integration service will be able to run the notebooks themselves.
 This ensures that the notebooks are reproducible, and not tied to an individual developer's environment.
 
 The landing page will contain metadata about the notebooks, along with a summary description, and a table of contents linking to individual notebooks.
