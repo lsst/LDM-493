@@ -57,7 +57,7 @@ Design documentation and user guides both refer to the same thing: a DM product.
 Depending on the user guide's intended audience, design documentation may flow and be transformed into user guide content.
 For example, the Science Pipelines user guide is an open source software project where users are also developers.
 Successfully using and extending the LSST Science Pipelines may require documentation of implementation details originally described in design documentation.
-Rather than maintain a parallel set of overlapping design and user documentation, in this case the design documents should be deprecated in favor of the user guide. (see :ref:`implementation-technotes-maintenance`).
+Rather than maintain a parallel set of overlapping design and user documentation, in this case the design documents should be deprecated in favor of the user guide.
 
 User Guide Working Groups
 -------------------------
