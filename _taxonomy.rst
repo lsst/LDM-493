@@ -59,7 +59,7 @@ DM's documentation taxonomy facilitates a flow of information from research and 
 
 As :numref:`fig-information-flow` illustrates, the scope and functionality of the Data Management System is specified by Requirements Documents.
 Design documents translate requirements into actionable designs and documentation of system implementations.
-Designs originate in :ref:`change controlled design documents (LDM) <ldm>`, though details can be deferred to :ref:`implementation technical notes (DMTN, SQR) <implementation-technotes>`.
+Designs are reflected in :ref:`change controlled design documents (LDM) <ldm>`, though details can be deferred to :ref:`technical notes (DMTN, SQR) <technotes>`.
 In addition to requirements documents, :ref:`technical notes <technotes>` inform design decisions.
 :ref:`User guides <guides>` are written for end users using a combination of information from the design documentation and the implemented software itself.
 Verification documentation is written as a consequence of testing activities.
