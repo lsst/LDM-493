@@ -4,6 +4,7 @@
 .. _`LPM-162: Project Publication Policy`: https://docushare.lsstcorp.org/docushare/dsweb/Get/LPM-162
 .. _`LPM-51: Document Management Plan`: https://docushare.lsstcorp.org/docushare/dsweb/Get/LPM-51
 .. _`Document-9224`: https://docushare.lsstcorp.org/docushare/dsweb/Get/Document-9224
+.. _`LDM-294: Data Management Organization and Charter`: https://docushare.lsstcorp.org/docushare/dsweb/Get/LDM-294/LDM-294%20DM%20Org%20and%20Charter%2020150311.doc
 
 .. _`SQR-000: The LSST DM Technical Note Platform`: https://sqr-000.lsst.io
 .. _SQR-006: https://sqr-006.lsst.io
