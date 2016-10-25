@@ -3,8 +3,8 @@
 Purpose and Scope
 =================
 
-The Data Management Documentation Architecture defines LSST Data Management's tecnical process for authoring, maintaining, and publishing documentation.
-This includes design documentation, technical implementation documentation, and operational documents such as user manuals and maintainance guides.
+The Data Management Documentation Architecture defines LSST Data Management's technical process for authoring, maintaining, and publishing documentation.
+This includes design documentation, technical implementation documentation, and operational documents such as user guides.
 By specifying management patterns and technologies, the goal of the Data Management Documentation Architecture is to ensure that documentation is available to the DM team and end-users when it is needed, in formats that are useful and appropriate.
 
 The Data Management Documentation Architecture covers:

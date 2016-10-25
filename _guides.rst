@@ -65,7 +65,7 @@ User Guide Working Groups
 User guides are DM products, much like the software, platforms and datasets they accompany.
 To oversee their delivery, each user guide project is managed by a corresponding working group.
 
-User guide working groups are a mixture of subject matter experts (SMEs; usually the engineers, scientists, or managers directly involved in building a product) with :ref:`TechDocs <techdocs>` engineers that provide expertise in infrastructure, technical writing, and information architecture. These working groups are structured to solve key management challenges:
+User guide working groups are a mixture of subject matter experts (SMEs; usually the engineers, scientists, or managers directly involved in building a product) with the :ref:`Documentation Engineer <doceng>` who provides expertise in infrastructure, technical writing, and information architecture. These working groups are structured to solve key management challenges:
 
 - User guides need strong cohesion and editorial curation, especially in their early development.
   A working group can provide consistent vision to a user guide project.
@@ -74,20 +74,20 @@ User guide working groups are a mixture of subject matter experts (SMEs; usually
   SMEs in the working group ensure that the user guide is technically appropriate and complete.
   SMEs in the working group can also liaison with the rest of the engineering team to manage documentation contributions.
 - Individual user guides exist within a larger environment of LSST documentation.
-  Engineers from the TechDocs team embedded in the working group develop the common infrastructure necessary for producing and publishing content.
-  TechDocs engineers also contribute knowledge in areas of information architecture and technical writing.
-  Being shared across user guide working groups, TechDocs engineers provide consistency and quality to the LSST documentation experience.
+  The Documentation Engineer embedded in the working group develops the common infrastructure necessary for producing and publishing content.
+  The Documentation Engineer also contributes knowledge in areas of information architecture and technical writing.
+  Being shared across user guide working groups, the Documentation Engineer provides consistency and quality to the LSST documentation experience.
 
 Each user guide working group’s composition will be unique and tuned to the project’s needs.
 However, the following roles should be filled, possible by the same or multiple people:
 
 - **Subject matter expert** who leads the curriculum development of the user guide.
 - **T/CAM** who is able to schedule effort for all engineers that may need to contribute documentation content.
-- **TechDocs engineer** who provides documentation infrastructure and provides advice on content (technical writing) and organization (information architecture).
+- **The Documentation Engineer** who provides documentation infrastructure and provides advice on content (technical writing) and organization (information architecture).
 
 Again, user guide working groups play a leadership role in documentation delivery.
 The engineering and scientific teams who build a project will be responsible for producing most of a user guide's content, especially reference content.
-TechDocs engineers will also contribute critical (highly used) and complex content pieces.
+The Documentation Engineer will also contribute critical (highly used) and complex content pieces.
 
 Maintenance
 -----------

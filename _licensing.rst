@@ -3,7 +3,7 @@
 Content Licensing
 =================
 
-Like Data Management source code, DM technical documentation is free and open and we welcome conributions to it from both inside and outside the LSST Project.
+Like Data Management source code, DM technical documentation is free and open and we welcome contributions to it from both inside and outside the LSST Project.
 
 All DM documentation content is licensed under the `Creative Commons Attribution 4.0 International (CC BY 4.0)`_ license.
 This license enables our users to freely share and adapt documentation content.

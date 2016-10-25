@@ -18,7 +18,7 @@ Some of the reasons Sphinx was chosen as DM's documentation generator include:
 
 - Sphinx and reStructuredText are implemented in Python, which matches the DM technology stack.
 - Since reStructuredText is plain text, Sphinx projects integrate well with Data Management's Git-based development workflow.
-- Through Python APIs, both Sphinx and the reStructuredText markup language are thoroughly extensible, giving the :ref:`TechDocs team <techdocs>` opportunity to engineer solutions that both improve developer efficiency, and improve the quality of documentation.
+- Through Python APIs, both Sphinx and the reStructuredText markup language are thoroughly extensible, giving the :ref:`Documentation Engineer <doceng>` opportunity to build solutions that both improve developer efficiency, and improve the quality of documentation.
   For example, Sphinx is able to introspect Python code to build API reference documentation.
 
 The DM Documentation Architecture uses two types of Sphinx projects, depending on the document class.
@@ -43,7 +43,7 @@ Single-page Sphinx projects implement the idea of a single page website.
 Authors create new single page projects from a configurable template.
 Each single-page Sphinx project is maintained in individual Git repositories and configured to publish automatically to :ref:`LSST the Docs <platforms-ltd>`.
 
-Much of the design and logic for the format is centrally managed by the TechDocs team in separate Git repositories.
+Much of the design and logic for the format is centrally managed by the Documentation Engineer in separate Git repositories.
 This makes single-page Sphinx projects manageable and consistent in form and function.
 This technology stack is also shared with :ref:`multi-page Sphinx projects <formats-sphinx-guides>`, which are employed by :ref:`user guide <guides>` projects.
 
@@ -78,7 +78,7 @@ In an Every Page is Page One (EPPO) architecture, every page of documentation is
 Topics link to each other based on subject affinities to form a bottom-up information architecture (as opposed to a strictly top-down hierarchy that is established by narratives like :ref:`single-page Sphinx projects <formats-sphinx-documents>` and other report-like documents).
 The EPPO architecture acknowledges that users will create their own curriculum for learning a product, and that a linear hierarchy is not well-suited for this.
 
-EPPO also benefits DM documentation development and maintainance.
+EPPO also benefits DM documentation development and maintenance.
 Each documentation page is self-contained, making documentation work easier to plan and schedule.
 Interlinked, self-contained pages also naturally reduce content duplication and ease maintenance.
 
