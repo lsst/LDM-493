@@ -16,13 +16,13 @@ The Data Management Documentation Architecture covers:
 
 This Architecture does **not** cover ad-hoc written communication channels. The following are examples of subjects beyond the scope of this document:
 
-- Communications platforms (e.g., the `LSST Community forum`, Slack, meetings).
+- Communications platforms (e.g., the `LSST Community forum`, Slack).
   See `SQR-011`_.
 - Meeting notes on Confluence.
   See `SQR-011`_.
 - Confluence wiki pages being used to coordinate work.
   See `SQR-011`_.
-- Requests for Comment (RFCs) and Discussion (RFC).
+- Requests for Comment (RFC) and Discussion (RFD).
   See the `DM Developer Guide <https://developer.lsst.io/processes/decision_process.html>`__.
 - Presentations.
 - Scientific publications.

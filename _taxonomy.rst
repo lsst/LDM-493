@@ -21,7 +21,7 @@ Requirements and interface control documentation (LPM, LSE)
 Change-controlled DM design documentation (LDM)
    These documents define the **scope** and **budget** of Data Management work that meet the **requirements** and **interface control documentation**.
    DM work is expected to be consistent with these **design documents**.
-   The LDM document authors are responsible for updating design documentation whenever necessitated by revised project requirements, or by evolving implementation choices.
+   LDM document authors are responsible for updating design documentation whenever necessitated by revised project requirements, or by evolving implementation choices.
    Design documents must be approved by the Change Control Board (`LPM-19: Change Control Process`_) before becoming the new baseline.
    These documents are also governed by `LPM-51: Document Management Plan`_.
    See :ref:`ldm` for how change-controlled documents are handled by the Data Management Documentation Architecture.
@@ -60,7 +60,6 @@ DM's documentation taxonomy facilitates a flow of information from research and 
 As :numref:`fig-information-flow` illustrates, the scope and functionality of the Data Management System is specified by Requirements Documents.
 Design documents translate requirements into actionable designs and documentation of system implementations.
 Designs are reflected in :ref:`change controlled design documents (LDM) <ldm>`, though details can be deferred to :ref:`technical notes (DMTN, SQR) <technotes>`.
-In addition to requirements documents, :ref:`technical notes <technotes>` inform design decisions.
 :ref:`User guides <guides>` are written for end users using a combination of information from the design documentation and the implemented software itself.
 Verification documentation is written as a consequence of testing activities.
 Finally, scientific publications are written as a holistic synthesis of the entire Data Management System for the community.

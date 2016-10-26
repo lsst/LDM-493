@@ -15,15 +15,16 @@ LSST the Docs
 LSST the Docs (LTD) is a platform for continuously publishing versioned documentation to the web.
 LTD is more fully described in `SQR-006`_; please see that technote for details beyond the scope of this summary.
 
-All DM documentation projects are published with LTD.
+All DM documentation projects maintained in a version control system (Git, GitHub) are published with LTD.
+Other documents are published with :ref:`DocuShare <docushare>`.
 
 LSST the Docs's key features
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The following LTD features are key to the DM documentation architecture:
+The following LTD features are key to the DM Documentation Architecture:
 
 - **LTD is a service that hosts static websites,** that is, websites that do not require server-side rendering logic.
-  Supporting only static websites assures that LTD is reliable and scalable.
+  Supporting only static websites ensures that LTD is reliable and scalable.
   This design decision also coerces documentation into a format that can be readily archived, which is important to DM's scientific legacy.
 
 - **Each documentation project hosted by LTD is published from a unique subdomain of the lsst.io domain.**
@@ -37,7 +38,7 @@ The following LTD features are key to the DM documentation architecture:
 
 - **LTD integrates well with Git repositories and continuous integration (CI) services.**
   CI allows the final documentation product to be rendered automatically by software from relatively simple markup.
-  Even scientific computation pipelines can be performed in CI that enable reproducible scientific documentation. [<--- I have no idea what this means - expand/rephrase?]
+  In CI, documentation generation can be coupled with science pipelines to enable automated and reproducible reporting.
 
 Requirements for compatibility with LSST the Docs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -45,7 +46,7 @@ Requirements for compatibility with LSST the Docs
 LTD imposes a few implementation constraints on DM documentation projects:
 
 - The source for the published documentation must be hosted in a version controlled repository; typically this a Git repository hosted by GitHub.
-  See :ref:`formats-alt` for the DM Documentation Architecture's approach to adapting documentation not natively to Git.
+  (Documentation not hosted in GitHub is published directly from :ref:`DocuShare <docushare>`.)
 
 - Each documentation project must be configured with a CI environment that builds and submits documentation whenever the underlying document source changes.
   Similarly, each documentation project requires software to transform documentation source into a static website.
