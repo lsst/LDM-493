@@ -37,8 +37,8 @@ This format publishes natively to the web, making these documents highly useable
 The single-page format is also straightforward to reduce into static, archived documents (like PDFs) that can be cited in scientific literature.
 The single page format also emulates scientific papers, and is appropriate for a narrative format.
 
-To reduce the publishing barrier, technotes can also be published through alternative formats using the Landing Page Framework.
-Landing pages shim other formats (particularly LaTeX, Word, Google Documents, and Jupyter notebook collections) into web pages, at some expense to the reading experience.
+Where it is more convenient to the author, technotes can also be published through alternative formats (such as LaTeX articles and Jupyter Notebook collections) using the :ref:`Landing Page Framework <formats-alt>`.
+Nonetheless, Sphinx projects are recommended over LaTeX projects for a better online reading experience.
 
 Authorship
 ----------

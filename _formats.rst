@@ -3,7 +3,7 @@
 Documentation Formats and Generators
 ====================================
 
-This section describes the tools used to build static documentation sites that are published with :ref:`LSST the Docs <platforms-ltd>`.
+This section describes the tools used to build static documentation sites that are published with :ref:`LSST the Docs <platforms-ltd>` and :ref:`DocuShare <docushare>`.
 
 .. _formats-sphinx:
 
@@ -127,13 +127,13 @@ Since it is an expensive workflow, a multi-page Sphinx site is only archived as 
 Landing Pages for Alternative Formats
 -------------------------------------
 
-Not all documentation is produced as a :ref:`Sphinx project <formats-sphinx>`.
-DM team members have shown a preference for alternative formats that have unique qualities like: built-in collaboration facilities, a heritage in scientific publication, or integration with software and data.
-Developer efficiency is paramount, and the DM Documentation Architecture must not impede developers from using the best tools at hand.
+Although Sphinx is the preferred DM documentation format, not all Git-backed documentation is produced as a :ref:`Sphinx project <formats-sphinx>`.
+Some documents are written in LaTeX for legacy reasons or to be compatible with scientific publishers.
+Jupyter notebooks are also being used for producing documents that are tightly integrated with code and data.
 
-But a heterogeneous mixture of authoring formats does not imply a heterogeneous delivery system.
-All DM documentation, even those produced by alternative formats, is delivered and published through the system discussed in :ref:`platforms`.
-To achieve this, documents authored in alternative formats are shimmed and published through a *landing page* framework.
+Since they are managed in Git, these document formats are eligible for being published as static websites with LSST the Docs.
+However, LaTeX documents, Jupyter notebooks, and similar formats, do not necessarily create polished websites that have the look and feel of LSST Documentation.
+Thus the DM Documentation Architecture shims these formats through a *landing page framework.*
 
 The Landing Page framework
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -163,6 +163,8 @@ This section describes workflows for publishing common document formats through 
 
    This section will be moved to a documentation user guide; likely in https://developer.lsst.io.
 
+.. _latex:
+
 LaTeX documents
 """""""""""""""
 
@@ -171,38 +173,7 @@ This GitHub_ repository is named after the document's handle, and also hosts Doc
 
 The continuous integration service renders the LaTeX source into a PDF that is displayed on the landing page.
 
-Active collaboration documents
-""""""""""""""""""""""""""""""
-
-Active collaboration documents refer to services such as Google Docs, iWork In The Cloud and Dropbox Paper that support rapid development of documents when muliple writers are simultaneously editing and commenting on the text.
-Below we use Google Doc as an example of this type of document.
-
-Google Docs are often created rapidly in an ad-hoc fashion with the understanding that in most cases, if the content has any value, the authors will produce a document in a first-party format such as a Technote.
-However in the case where this is not possible (for example because the document in question is a live spreadsheet), they can be captured in a format that integrates with the Documentation Architecture.
-
-Once a Google Doc is delivered, such as by closing a ticket, it is exported into a GitHub_ repository.
-This GitHub_ repository is named after the document's handle, and also hosts DocHub metadata and continuous integration configuration.
-
-The Google Doc can be exported as HTML (specifically, a zipped file that includes images), which are then displayed on the landing page.
-PDF and EPUB versions can also be exported for offline reading; these files will be linked from the landing page.
-
-Subsequent revisions to the document are made on Google Docs and re-exported to the GitHub_ repository in a new Git commit.
-In general though, authors are strongly encouraged to transition to a first-party format whenever possible. 
-
-Confluence pages
-""""""""""""""""
-
-Confluence, or other Wiki pages, are a form of active collaborative document like Google Docs above.
-The same caveats apply: authors that have non-ephemeral content that started off as a wiki page are strongly ecouraged to transition to a first-party format whenever possible.
-
-In the event where this is not possible, once a Confluence page is delivered, such as by closing a ticket, it must be exported to a GitHub_ repository.
-This GitHub_ repository is named after the document's handle, and also hosts DocHub metadata and continuous integration configuration.
-
-The page should be exported as a PDF document using Confluence's native PDF export function.
-This PDF will be displayed on the landing page.
-
-Subsequent revisions to the Confluence page should be re-exported to the GitHub_ repository in a new Git commit.
-In general though, authors are strongly encouraged to transition to a first-party format whenever possible. 
+.. _jupyter-notebooks:
 
 Jupyter notebooks
 """""""""""""""""
@@ -215,3 +186,39 @@ This ensures that the notebooks are reproducible, and not tied to an individual 
 
 The landing page will contain metadata about the notebooks, along with a summary description, and a table of contents linking to individual notebooks.
 If there is only a single notebook, that notebook can be displayed on the landing page itself.
+
+Formats not Managed in Git
+--------------------------
+
+All formats previously in this section are published with LSST the Docs, as they are managed in a version control system (Git with GitHub).
+This section describes policies for formats not publishable with LSST the Docs.
+
+.. _office:
+
+Office documents
+^^^^^^^^^^^^^^^^
+
+Office documents are those produced by office and word processing suites, either in native applications (such as Microsoft Word and Excel, and Apple Pages) or in the cloud (including Google Docs and Dropbox Paper).
+These formats may be used for :ref:`change-controlled (LDM) documents <ldm>`.
+Note that such documents are only published though DocuShare.
+In DocuShare, both a PDF rendering and an editable version is included in the document's stack.
+
+Authors can register new office documents with DocHub so that their existence is known to the DM team, even before being officially delivered to DocuShare.
+DocHub can link to the document's read-only preview if available from the cloud application.
+However, note that such draft documents are not stored by the LSST Project, and thus are not considered to be delivered.
+For example, a JIRA ticket may not be closed if it merely links to a Google Docs page, or Word attachment, rather than a DocuShare deposition.
+
+.. _confluence:
+
+Confluence pages
+^^^^^^^^^^^^^^^^
+
+Some authors may choose to draft documents in LSST's Confluence Wiki to take advantage of its commenting features and online editing.
+A Confluence page is not considered a delivered document, however.
+The authors must convert the wiki page into a format accepted for the document's class.
+A technical note must be converted into a single-page Sphinx project, and change controlled documents may be converted into either single-page Sphinx projects or office documents.
+Once converted, authors must delete the original wiki page.
+
+While the documented is being drafted, authors can register the document with DocHub to make it discoverable by the DM team.
+The document is only considered delivered, however, once they Confluence page has been converted and published in either DocuShare or LSST the Docs.
+A JIRA ticket, for example, may not be closed with a link to a Confluence page as evidence of documentation.

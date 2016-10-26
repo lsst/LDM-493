@@ -3,7 +3,7 @@
 Publishing Platforms
 =====================
 
-Two platforms facilitate publication and discovery of all DM documentation: LSST the Docs, and LSST DocHub.
+Three platforms facilitate publication and discovery of all DM documentation: LSST the Docs, DocuShare, and LSST DocHub.
 Publishing all documentation in this system ensures that documentation is consistent in presentation and discoverable.
 This section summarizes the functionality of these platforms.
 
@@ -46,11 +46,26 @@ Requirements for compatibility with LSST the Docs
 LTD imposes a few implementation constraints on DM documentation projects:
 
 - The source for the published documentation must be hosted in a version controlled repository; typically this a Git repository hosted by GitHub.
-  (Documentation not hosted in GitHub is published directly from :ref:`DocuShare <docushare>`.)
+  Documentation not hosted in GitHub is published directly from :ref:`DocuShare <docushare>`, see below.
 
 - Each documentation project must be configured with a CI environment that builds and submits documentation whenever the underlying document source changes.
   Similarly, each documentation project requires software to transform documentation source into a static website.
   The SQuaRE team provides CI infrastructure and software to publish documentation in common source formats through LTD (see :ref:`formats`).
+
+.. _docushare:
+
+LSST Project DocuShare
+----------------------
+
+DocuShare is the LSST Project’s official document repository (see `LPM-51: Document Management Plan`_).
+
+All :ref:`change controlled design documents <ldm>` (with LDM handles) are deposited in DocuShare once approved by the Change Control Board (CCB; see `LPM-19: Change Control Process`_), even if they are otherwise published through :ref:`LSST the Docs <platforms-ltd>`.
+The LSST Project considers the version in DocuShare as the official version of a document that reflects a technical, schedule and budget baseline.
+LSST DocHub links to a document published in both LSST the Docs and DocuShare, with DocuShare being denoted as the baselined version.
+
+Although DocuShare will be used in conjunction with LSST the Docs, some documentation formats are not managed in a version control system (Git) and thus are not publishable through LSST the Docs.
+These include documents from 'office' suites, such as Apple Pages, Google Docs, Dropbox Paper, Microsoft Word and Excel.
+For such documents, DocuShare is the *only* publishing platform: a document only in Google Docs, for example, is not yet considered delivered.
 
 .. _platforms-dochub:
 
@@ -68,7 +83,10 @@ All DM documentation must be available through DocHub.
 Requirements for compatibility with DocHub
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To be listed in LSST DocHub, projects must be registered with DocHub, and have a DocHub-compatible metadata file residing in the project's Git repository.
+To be listed in LSST DocHub, projects must be registered with DocHub.
+Documentation projects hosted on GitHub have a DocHub-compatible metadata file residing in the project's Git repository.
+Metadata is mirrored between DocHub's database and the metadata file stored in Git.
+Documentation projects published exclusively though DocuShare are also resisted in DocHub, though their metadata is editable through a web interface instead of a file.
 
 .. note::
 
@@ -82,7 +100,7 @@ Citeable documentation
 LSST Data Management documentation is considered on par with scientific literature.
 Being close to the implementation, continuously tested, and written by the collective team, DM’s technical documentation is the most accurate and scientifically useful reference for detailed aspects of the Data Management System.
 To integrate with scientific literature, DM technical documentation is citeable according to the expectations of the astronomy community and the LSST Project.
-This section describes how DM documentation is made citeable through Digital Object Identifiers, registration with the NASA Astrophysics Data System, and storage on the LSST Project DocuShare.
+This section describes how DM documentation is made citeable through Digital Object Identifiers and registration with the NASA Astrophysics Data System.
 
 .. _doi:
 
@@ -120,13 +138,3 @@ ADS is not a document hosting service, but rather a metadata and search service.
 ADS lists LSST technical documentation with record pages that include bibliographic information and links pointing to the published documentation on LSST the Docs.
 The DM documentation platforms automatically submit new and updated DM documentation to ADS as part of the regular continuous delivery process.
 Specifically, the documentation platforms cross-walk metadata already available through LSST DocHub into the ADS submission schema (`ADS Tagged Format`_). 
-
-.. _docushare:
-
-LSST Project DocuShare
-^^^^^^^^^^^^^^^^^^^^^^
-
-DocuShare is the LSST Project’s official document repository (see `LPM-51: Document Management Plan`_).
-:ref:`Change controlled design documents <ldm>` (with LDM handles) are deposited in DocuShare once approved by the Change Control Board (CCB; see `LPM-19: Change Control Process`_).
-The LSST Project considers the version in DocuShare as the official version of a document that reflects a technical, schedule and budget baseline.
-Such documents are also published to LSST the Docs and made available through LSST DocHub to minimise the number of platforms developers and users have to interact with.
