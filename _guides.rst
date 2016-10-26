@@ -27,10 +27,10 @@ We enable this usage by making individual pages of guides :ref:`citeable <citeab
 Technical Implementation
 ------------------------
 
-All DM user guides are created as multi-page Sphinx projects.
+All DM user guides are created as :ref:`multi-page Sphinx projects <formats-sphinx-guides>`.
 This format facilitates a topic-based information architecture needed for comprehensive documentation projects.
 
-Given that astronomers will use multiple DM products simultaneously (Pipeline software, DataSpace, and data release), mandating the multi-page Sphinx format unifies the user experience across LSST’s astronomer-facing documentation.
+Given that astronomers will use multiple DM products simultaneously (for example: Pipeline software, DataSpace, and data release), mandating the :ref:`multi-page Sphinx <formats-sphinx-guides>` format unifies the user experience across LSST’s astronomer-facing documentation.
 
 Organization
 ------------
@@ -45,7 +45,7 @@ A project may have multiple user guides if the user audience is highly disjoint 
 Multiple audiences can share a common user guide if their interests are similar.
 This is common for open source APIs, like `pipelines.lsst.io`_.
 Finally, multiple source repositories may share a common user guide project.
-For example, the Science Pipelines consist of many Git repositories, yet are commonly documented at `pipelines.lsst.io`_ since we want users to think of the Pipelines as a coherent entity.
+For example, the Science Pipelines consist of many Git repositories, yet are commonly documented at `pipelines.lsst.io`_ since we want to portray the Pipelines as a coherent entity.
 
 Because user guides are websites, links allow independently produced user guides to still act like a consistent, monolithic resource.
 Instead of duplicating or rephrasing content from a different guide, user guides always link to the most authoritative page.
@@ -79,7 +79,7 @@ User guide working groups are a mixture of subject matter experts (SMEs; usually
   Being shared across user guide working groups, the Documentation Engineer provides consistency and quality to the LSST documentation experience.
 
 Each user guide working group’s composition will be unique and tuned to the project’s needs.
-However, the following roles should be filled, possible by the same or multiple people:
+However, the following roles should be filled, possibly by the same or multiple people:
 
 - **Subject matter expert** who leads the curriculum development of the user guide.
 - **T/CAM** who is able to schedule effort for all engineers that may need to contribute documentation content.

@@ -22,22 +22,22 @@ Another use for technotes is to provide high level overviews of shipped products
 These narratives are like the blog posts that tech companies write about their products, and are opportunities to explain the philosophy and design reasoning of DM products.
 Often the tone of such narratives does not fit in user documentation, but works well in a technote article.
 
-Overall, technotes are catch-all containers for narratives that are not design documentation nor user guides.
+Overall, technotes are catch-all containers for narratives that are not :ref:`design documentation <ldm>` nor :ref:`user guides <guides>`.
 
 Technotes are created and published on-demand by DM team members.
 There is no approval process for technotes other than the standard DM code review for ticketed work.
 Through this lack of administrative process, and infrastructural automations (see below), the bar for creating a technote is intentionally low.
-This is important since capturing more information in a standardized technote format increases the proportion of DM knowledge that is accessible through DocHub.
+This is important since capturing more information in a standardized technote format increases the proportion of DM knowledge that is accessible through :ref:`DocHub <platforms-dochub>`.
 
 Technical Implementation
 ------------------------
 
-Single-page Sphinx projects are the recommended format for technotes.
+:ref:`Single-page Sphinx <formats-sphinx-documents>` projects are the recommended format for technotes.
 This format publishes natively to the web, making these documents highly useable in browsing and information hunting contexts.
 The single-page format is also straightforward to reduce into static, archived documents (like PDFs) that can be cited in scientific literature.
 The single page format also emulates scientific papers, and is appropriate for a narrative format.
 
-Where it is more convenient to the author, technotes can also be published through alternative formats (such as LaTeX articles and Jupyter Notebook collections) using the :ref:`Landing Page Framework <formats-alt>`.
+Where it is more convenient to the author, technotes can also be published through alternative formats (such as LaTeX_ articles and Jupyter_ Notebook collections) using the :ref:`Landing Page Framework <formats-alt>`.
 Nonetheless, Sphinx projects are recommended over LaTeX projects for a better online reading experience.
 
 Authorship
@@ -52,9 +52,9 @@ Because technote authors are intellectually responsible for their content, DM te
 Maintenance
 -----------
 
-Technotes do not need to be updated.
+Technotes *do not need* to be updated.
 Akin to a traditional paper publication, a technote implicitly represents a state of knowledge at the time of publication.
-Creating a technote does not obligate the authors to continually re-assess and update the document.
+Creating a technote does not oblige the authors to continually re-assess and update the document.
 
 When significant changes occur, authors can add metadata and other notices.
 For example, if content from a technote has been migrated into a different document (upstream to a design document, or downstream to a user guide), the technote can be marked as deprecated.
@@ -62,4 +62,4 @@ For example, if content from a technote has been migrated into a different docum
 A technote *can* be updated freely by the authors.
 If new information needs to be documented that fits an existing technotes’ scope, that existing technote can be updated rather than create an entirely new document.
 This approach reduces the amount of legacy documentation.
-Archival tools and the LSST the Docs publishing platform maintain older versions of technotes for historical interest.
+Archival tools and the :ref:`LSST the Docs <platforms-ltd>` publishing platform maintain older versions of technotes for historical interest.

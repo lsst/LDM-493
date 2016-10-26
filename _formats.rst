@@ -21,8 +21,7 @@ Some of the reasons Sphinx was chosen as DM's documentation generator include:
 - Through Python APIs, both Sphinx and the reStructuredText markup language are thoroughly extensible, giving the :ref:`Documentation Engineer <doceng>` opportunity to build solutions that both improve developer efficiency, and improve the quality of documentation.
   For example, Sphinx is able to introspect Python code to build API reference documentation.
 
-The DM Documentation Architecture uses two types of Sphinx projects, depending on the document class.
-These are :ref:`single-page projects <formats-sphinx-documents>` for narrative documents, and :ref:`multi-page projects <formats-sphinx-guides>` for user guides.
+The DM Documentation Architecture uses two types of Sphinx projects, depending on the document class: :ref:`single-page projects <formats-sphinx-documents>` for narrative documents and :ref:`multi-page projects <formats-sphinx-guides>` for user guides.
 
 .. _formats-sphinx-documents:
 
@@ -39,15 +38,17 @@ At the same time, a single page website *is a website* and benefits from native 
 Implementation
 """"""""""""""
 
-Single-page Sphinx projects implement the idea of a single page website.
-Authors create new single page projects from a configurable template.
+Single-page Sphinx projects implement the idea of a single-page website.
+Authors create new single-page Sphinx projects from a configurable template.
 Each single-page Sphinx project is maintained in individual Git repositories and configured to publish automatically to :ref:`LSST the Docs <platforms-ltd>`.
 
-Much of the design and logic for the format is centrally managed by the Documentation Engineer in separate Git repositories.
+Much of the design and logic for the format is centrally managed in separately from content in Git repositories maintained by the Documentation Engineer.
 This makes single-page Sphinx projects manageable and consistent in form and function.
 This technology stack is also shared with :ref:`multi-page Sphinx projects <formats-sphinx-guides>`, which are employed by :ref:`user guide <guides>` projects.
 
-The single-page Sphinx format is recommended for technotes, implementation technotes, and change-controlled design documentation. As an alternative, these formats can be published through the landing page framework. Authoring and publishing through the single-page Sphinx format, however, creates a better reading experience due to features like deep hyperlinking to individual content objects and responsive design.
+The single-page Sphinx format is recommended for :ref:`technotes <technotes>` and :ref:`change-controlled design documentation <ldm>`.
+Alternatively, these document classes can be published through the :ref:`landing page framework <formats-alt>`.
+Authoring and publishing through the single-page Sphinx format, however, creates a better reading experience due to features like deep hyperlinking to individual content objects and responsive design.
 
 .. _formats-sphinx-document-archival:
 
@@ -129,27 +130,25 @@ Landing Pages for Alternative Formats
 
 Although Sphinx is the preferred DM documentation format, not all Git-backed documentation is produced as a :ref:`Sphinx project <formats-sphinx>`.
 Some documents are written in LaTeX for legacy reasons or to be compatible with scientific publishers.
-Jupyter notebooks are also being used for producing documents that are tightly integrated with code and data.
+Jupyter_ notebooks are also being used for producing documents that are tightly integrated with code and data.
 
-Since they are managed in Git, these document formats are eligible for being published as static websites with LSST the Docs.
-However, LaTeX documents, Jupyter notebooks, and similar formats, do not necessarily create polished websites that have the look and feel of LSST Documentation.
+Since they are managed in Git, these document formats are eligible for being published as static websites with :ref:`LSST the Docs <platforms-ltd>`.
+However, LaTeX documents, Jupyter_ notebooks, and similar formats, do not necessarily create polished websites that have the look and feel of LSST documentation.
 Thus the DM Documentation Architecture shims these formats through a *landing page framework.*
 
 The Landing Page framework
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Landing pages are static websites published with LSST the Docs, and indexed by DocHub.
+Landing pages are static websites published with :ref:`LSST the Docs <platforms-ltd>`, and indexed by :ref:`DocHub <platforms-ltd>`.
 Irrespective of the original authoring tool, landing pages provide a consistent experience for consuming documentation.
 
-Each landing page presents metadata to the reader, like title, authorship, summary, and links back to DocHub and related publications.
+Each landing page presents metadata to the reader, like title, authorship, summary, and links back to :ref:`DocHub <platforms-ltd>` and related publications.
 Alongside this metadata, the landing page presents the document either as a list of links to other pages or files, or the document itself as an on-page iframe to a PDF.\ [#fn-gh-publisher]_
 
 .. [#fn-gh-publisher] The concept of displaying a PDF in an iframe alongside metadata on a static site is based on the `gh-publisher`_ project by Ewan Mellor.
 
 Landing pages are hosted as GitHub_ repositories that contains and versions the document's content and metadata.
-Although content on another platform (Confluence, Google Docs) can be linked to, the content in the GitHub_ repository must be complete and self-contained.
-
-Similar to Sphinx-based documents, a continuous integration service, like Travis or Jenkins, publishes the landing page to LSST the Docs whenever the Git repository is updated.
+Similar to Sphinx-based documents, a continuous integration service, like Travis or Jenkins, publishes the landing page to `LSST the Docs <platforms-ltd>` whenever the Git repository is updated.
 Automations also make provisioning landing pages efficient.
 
 The landing page generator, page design, and automations are provided by the SQuaRE team.
@@ -181,24 +180,24 @@ Jupyter notebooks
 Being JSON-based, Jupyter_ notebooks are natively hosted in a GitHub_ repository.
 This repository is named after the document's handle, and also hosts DocHub metadata and continuous integration configuration.
 
-The continuous integration service will be able to run the notebooks themselves.
+The continuous integration service runs the notebooks themselves.
 This ensures that the notebooks are reproducible, and not tied to an individual developer's environment.
 
-The landing page will contain metadata about the notebooks, along with a summary description, and a table of contents linking to individual notebooks.
+The landing page contains metadata about the notebooks, along with a summary description, and a table of contents linking to individual notebooks.
 If there is only a single notebook, that notebook can be displayed on the landing page itself.
 
 Formats not Managed in Git
 --------------------------
 
-All formats previously in this section are published with LSST the Docs, as they are managed in a version control system (Git with GitHub).
-This section describes policies for formats not publishable with LSST the Docs.
+All formats previously in this section are published with :ref:`LSST the Docs <platforms-ltd>`, as they are managed in a version control system (specifically, Git with GitHub_).
+This section describes policies for formats not publishable with :ref:`LSST the Docs <platforms-ltd>`.
 
 .. _office:
 
 Office documents
 ^^^^^^^^^^^^^^^^
 
-Office documents are those produced by office and word processing suites, either in native applications (such as Microsoft Word and Excel, and Apple Pages) or in the cloud (including Google Docs and Dropbox Paper).
+Office documents are those produced by office and word processing suites, either in native applications (such as Microsoft Word and Excel, and Apple Pages) or in the cloud (such as Google Docs and Dropbox Paper).
 These formats may be used for :ref:`change-controlled (LDM) documents <ldm>`.
 Note that such documents are only published though DocuShare.
 In DocuShare, both a PDF rendering and an editable version is included in the document's stack.
@@ -206,19 +205,19 @@ In DocuShare, both a PDF rendering and an editable version is included in the do
 Authors can register new office documents with DocHub so that their existence is known to the DM team, even before being officially delivered to DocuShare.
 DocHub can link to the document's read-only preview if available from the cloud application.
 However, note that such draft documents are not stored by the LSST Project, and thus are not considered to be delivered.
-For example, a JIRA ticket may not be closed if it merely links to a Google Docs page, or Word attachment, rather than a DocuShare deposition.
+For example, a JIRA ticket may not be closed if it merely links to a Google Docs page, or an attached Word file, rather than a DocuShare deposition.
 
 .. _confluence:
 
 Confluence pages
 ^^^^^^^^^^^^^^^^
 
-Some authors may choose to draft documents in LSST's Confluence Wiki to take advantage of its commenting features and online editing.
+Some authors may choose to draft documents in LSST's Confluence wiki to take advantage of its commenting features and online editing.
 A Confluence page is not considered a delivered document, however.
 The authors must convert the wiki page into a format accepted for the document's class.
 A technical note must be converted into a single-page Sphinx project, and change controlled documents may be converted into either single-page Sphinx projects or office documents.
 Once converted, authors must delete the original wiki page.
 
 While the documented is being drafted, authors can register the document with DocHub to make it discoverable by the DM team.
-The document is only considered delivered, however, once they Confluence page has been converted and published in either DocuShare or LSST the Docs.
+The document is only considered delivered, however, once the Confluence page has been converted and published in either DocuShare or LSST the Docs.
 A JIRA ticket, for example, may not be closed with a link to a Confluence page as evidence of documentation.
