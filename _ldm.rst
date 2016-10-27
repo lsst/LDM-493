@@ -27,7 +27,7 @@ Some change-controlled documents are only available through :ref:`DocuShare <doc
 In these cases, :ref:`DocHub <platforms-dochub>` indexes and links to the document from :ref:`DocuShare <docushare>`.
 These documents are not mirrored on :ref:`LSST the Docs <platforms-ltd>`.
 
-DM members are encouraged to author documents in formats that can be version-controlled in Git and published by :ref:`LSST the Docs <platforms-ltd>` for improved collaboration.
+DM members are encouraged to author documents in formats that can be version-controlled in Git and published by :ref:`LSST the Docs <platforms-ltd>`.
 :ref:`Single-page Sphinx <formats-sphinx-documents>` projects are preferred, and LaTeX documents published with the :ref:`Landing Page Framework <formats-alt>` are allowed secondarily.
 The status of these Git-hosted documents in the change-control process is reflected in its Git branches (and hence editions on LSST the Docs).
 The ``master`` branch (and main :ref:`LSST the Docs <platforms-ltd>` edition) is reserved for change-controlled versions of a document.
