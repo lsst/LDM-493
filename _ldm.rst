@@ -26,7 +26,7 @@ Per `LPM-51 <LPM-51: Document Management Plan>`_, all change-controlled document
 
 Some change-controlled documents are only available through :ref:`DocuShare <docushare>`, such as :ref:`word-processing files and spreadsheets <office>`, and all *classified* (non-public) documents.
 In these cases, :ref:`DocHub <platforms-dochub>` indexes and links to the document from :ref:`DocuShare <docushare>`.
-These documents are not be mirrored on :ref:`LSST the Docs <platforms-ltd>`.
+These documents are not mirrored on :ref:`LSST the Docs <platforms-ltd>`.
 
 DM members are encouraged to author documents in formats that can be version-controlled in Git and published by :ref:`LSST the Docs <platforms-ltd>` for improved collaboration.
 :ref:`Single-page Sphinx <formats-sphinx-documents>` projects are preferred, and LaTeX documents published with the :ref:`Landing Page Framework <formats-alt>` are allowed secondarily.

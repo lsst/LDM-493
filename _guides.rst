@@ -50,8 +50,8 @@ For example, the Science Pipelines consist of many Git repositories, yet are com
 Because user guides are websites, links allow independently produced user guides to still act like a consistent, monolithic resource.
 Instead of duplicating or rephrasing content from a different guide, user guides always link to the most authoritative page.
 
-Relation between users guides and design documentation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Relation between user guides and design documentation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Design documentation and user guides both refer to the same thing: a DM product.
 Depending on the user guide's intended audience, design documentation may flow and be transformed into user guide content.
@@ -103,7 +103,7 @@ API changes may break conceptual or tutorial documentation.
 Where possible, the software development ticket’s scope should including fixing incompatibilities in the documentation.
 Where the changes are too numerous, the outdated documentation should still be identified and excluded from documentation builds, and a follow-up documentation ticket should created and scheduled.
 
-User Guides and Community.lsst.org
+User guides and community.lsst.org
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 `Community.lsst.org`_ is DM’s primary long-form communication venue, both internally and with end-users.
