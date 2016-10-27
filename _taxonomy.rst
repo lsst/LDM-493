@@ -22,7 +22,7 @@ Change-controlled DM design documentation (LDM)
    These documents define the **scope** and **budget** of Data Management work that meet the **requirements** and **interface control documentation**.
    DM work is expected to be consistent with these **design documents**.
    LDM document authors are responsible for updating design documentation whenever necessitated by revised project requirements, or by evolving implementation choices.
-   Design documents must be approved by the Change Control Board (`LPM-19: Change Control Process`_) before becoming the new baseline.
+   DM design documents must be approved by the DM Technical Control Team before becoming the new baseline.
    These documents are also governed by `LPM-51: Document Management Plan`_.
    See :ref:`ldm` for how change-controlled documents are handled by the Data Management Documentation Architecture.
 
