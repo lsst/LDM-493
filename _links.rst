@@ -1,5 +1,7 @@
 .. This file contains links that are consumed by other sections
 
+.. _`LPM-17: Science Requirements Document`: https://docushare.lsstcorp.org/docushare/dsweb/Get/LPM-17 
+.. _`LDM-151: Data Management Application Design`: https://ldm-151.lsst.io/v/draft/LDM-151.pdf
 .. _`LPM-19: Change Control Process`: https://docushare.lsstcorp.org/docushare/dsweb/Get/LPM-19
 .. _`LPM-162: Project Publication Policy`: https://docushare.lsstcorp.org/docushare/dsweb/Get/LPM-162
 .. _`LPM-51: Document Management Plan`: https://docushare.lsstcorp.org/docushare/dsweb/Get/LPM-51

@@ -17,3 +17,5 @@ g.update(confs)
 
 # Ignore content partials
 exclude_patterns.append('_*.rst')
+
+linkcheck_ignore = [r'^http://adsabs.harvard.edu']

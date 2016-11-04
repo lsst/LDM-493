@@ -14,7 +14,8 @@ The Data Management Documentation Architecture covers:
 - A :ref:`set of documentation formats <formats>` that maintain a consistent reading and discovery experience, while also promoting developer efficiency.
 - Policies for organizing the production and maintenance of each class of documentation.
 
-This Architecture does **not** cover ad-hoc written communication channels. The following are examples of subjects beyond the scope of this document:
+This Architecture does **not** cover ad-hoc written communication channels.
+The following are examples of subjects beyond the scope of this document:
 
 - Communications platforms (e.g., the `LSST Community forum`, Slack).
   See `SQR-011`_.
@@ -25,5 +26,6 @@ This Architecture does **not** cover ad-hoc written communication channels. The 
 - Requests for Comment (RFC) and Discussion (RFD).
   See the `DM Developer Guide <https://developer.lsst.io/processes/decision_process.html>`__.
 - Presentations.
-- Scientific publications.
-  See `LPM-162: Project Publication Policy`_.
+
+This Architecture applies only to Data Management documentation projects.
+Policies for LSST Project documentation (including documents with "LPM" and "LSE" handles) are specified in `LPM-51: Document Management Plan`_, policies for scientific publications are documented in `LPM-162: Project Publication Policy`_.
