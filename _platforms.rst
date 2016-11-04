@@ -79,7 +79,7 @@ All DM documentation is available through DocHub.
 
 .. note::
 
-   DocHub's design in ongoing and will be presented in upcoming technotes.
+   DocHub's design is ongoing and will be presented in upcoming technotes.
 
 Requirements for compatibility with DocHub
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
