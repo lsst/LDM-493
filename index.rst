@@ -1,7 +1,27 @@
 :tocdepth: 1
 
+.. sectnum::
+
 .. note::
 
-   **This Design Document is not yet published.**
+   **This draft is not under LSST change control.**
 
-   This document specifies the taxonomy of documentation that Data Management produces and policies for their production, management and delivery.
+.. include:: /_purpose.rst
+
+.. include:: /_taxonomy.rst
+
+.. include:: /_people.rst
+
+.. include:: /_licensing.rst
+
+.. include:: /_platforms.rst
+
+.. include:: /_formats.rst
+
+.. include:: /_ldm.rst
+
+.. include:: /_technotes.rst
+
+.. include:: /_guides.rst
+
+.. include:: /_links.rst
